@@ -171,3 +171,15 @@ export const clientLogo = [
     },
 ]
 
+export const certifications = [
+    {
+        id: 1,
+        alt: "Certificación ISO 9001",
+        route: "./src/assets/certifications/iso-9001.jpg"
+    },
+    {
+        id: 2,
+        alt: "IQNet",
+        route: "./src/assets/certifications/iqnet.png"
+    }
+]

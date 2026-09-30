@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #191a1b;
+  background-color: #ffffff;
+
+  --font-family-base: "IBM Plex Sans", sans-serif;
+  --color-background: #ffffff;
+  --color-highlight: #0088FF;
+  --color-highlight-rgb: 0 136 255;
+  --color-title: #000000;
+  --color-text: #191a1b;
+  --bs-primary: var(--color-highlight);
+  --bs-primary-rgb: 0, 136, 255;
+  --bs-body-color: var(--color-text);
+  --bs-body-bg: var(--color-background);
+  --bs-font-sans-serif: var(--font-family-base);
+  --page-gutter: clamp(1rem, 5vw, 5rem);
+  --page-block-gutter: clamp(4rem, 8.333vw, 7.5rem);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow: hidden;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+}
+
+#root {
+  width: 100%;
+  padding-inline: var(--page-gutter);
+}
+
+.page-snap-container {
+  height: 100vh;
+  height: 100dvh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+  overscroll-behavior-y: contain;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.page-snap-container::-webkit-scrollbar {
+  display: none;
+}
+
+.page-snap-section {
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding-block: 90px 2rem;
+  scroll-snap-align: start;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-title);
+}
