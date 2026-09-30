@@ -1,7 +1,6 @@
-import AboutUs from "./sections/aboutUs.jsx";
-import Clients from "./sections/clients.jsx";
-import Header from "./components/header.jsx";
-import WhatsAppNav from "./components/whatsApp-nav.jsx";
+import AboutUs from "./sections/AboutUs.jsx";
+import Header from "./components/Header.jsx";
+import WhatsAppNav from "./components/WhatsApp-nav.jsx";
 
 function App() {
     return (

@@ -1,30 +1,30 @@
-# Metalúrgica Galli S.R.L. - Web Institucional Corporativa
+# Metalúrgica Galli S.R.L. — Corporate Website
 
-Una plataforma "One-Page" corporativa desarrollada a medida para una PYME del sector metalúrgico industrial. El objetivo del proyecto fue modernizar y digitalizar la presencia de la empresa, destacando su capacidad técnica, parque de maquinarias y portfolio de clientes mediante una interfaz rápida, escalable y orientada al entorno B2B.
+A custom-built one-page website for an industrial metalworking company. The project modernizes the company's digital presence by highlighting its technical capabilities, machinery, and client portfolio through a fast, scalable, B2B-focused interface.
 
-## Características Principales
+## Key Features
 
-*   **Arquitectura Modular:** Separación estricta entre la capa de datos (`/data`) y la capa de presentación (UI). El catálogo de servicios y maquinaria se renderiza dinámicamente, permitiendo actualizaciones rápidas sin tocar la estructura del código.
-*   **Diseño Responsivo:** Maquetación adaptativa *Mobile-First* pensada para dispositivos móviles y monitores ultra-wide de oficinas industriales.
-*   **Interactividad UI:** Galerías de imágenes con scroll horizontal optimizado y navegación fluida entre secciones.
-*   **Conversión:** Formularios de contacto directos sin dependencia de backend propio y accesos directos de comunicación.
+- **Modular architecture:** Clear separation between data (`/data`) and presentation (UI). Service and machinery catalogs are rendered dynamically, allowing quick updates without changing the component structure.
+- **Responsive design:** Mobile-first layouts designed for phones through wide desktop displays.
+- **Interactive UI:** Image galleries with optimized horizontal scrolling and smooth section navigation.
+- **Lead generation:** Direct contact forms and communication links without requiring a custom backend.
 
-## Tecnologías y Herramientas
+## Technologies
 
-*   **Core:** React (Hooks, Functional Components), JavaScript (ES6+), HTML5, CSS3.
-*   **UI Framework:** Bootstrap 5 (Grillas y utilidades).
-*   **Build Tool:** Vite (Tiempos de compilación optimizados y HMR).
-*   **Linter & Formatter:** ESLint configurado bajo estándares estrictos para asegurar la calidad y consistencia del código.
-*   **Despliegue:** CI/CD configurado para entornos estáticos (Cloudflare Pages / Vercel).
+- **Core:** React (Hooks and functional components), JavaScript (ES6+), HTML5, and CSS3.
+- **UI framework:** Bootstrap 5 grid and utility classes.
+- **Build tool:** Vite for fast builds and hot module replacement.
+- **Linting:** ESLint for code quality and consistency.
+- **Deployment:** Static hosting and CI/CD compatible with Cloudflare Pages and Vercel.
 
-## Estructura del Proyecto
+## Project Structure
 
-El código base sigue un principio de orden visual y escalabilidad, preparando el terreno para futuros módulos:
+The codebase is organized for clarity and scalability, leaving room for future modules:
 
 ```text
 src/
-├── assets/      # Archivos estáticos, imágenes optimizadas y logotipos
-├── components/  # Componentes de UI aislados y reutilizables (Cards, Botones)
-├── data/        # Almacenamiento de datos en formato JSON/JS (Catálogos)
-├── sections/    # Bloques funcionales principales (Hero, Servicios, Historia)
-└── App.jsx      # Contenedor raíz y orquestación de la One-Page
+├── assets/      # Static assets, optimized images, and logos
+├── components/  # Reusable UI components (cards, buttons, and navigation)
+├── data/        # JavaScript data catalogs
+├── sections/    # Main page sections (about, services, and history)
+└── App.jsx      # Root component that orchestrates the one-page layout

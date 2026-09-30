@@ -1,4 +1,4 @@
-import { clientLogo } from "../data/CompanyInformation.js"
+import { clientLogos } from "../data/CompanyInformation.js"
 import "./clients.css"
 
 const clientAssets = import.meta.glob("../assets/client-logo/*", {
@@ -22,7 +22,7 @@ function Clients() {
 							key={copy}
 							aria-hidden={copy === 1 ? "true" : undefined}
 						>
-							{clientLogo.map((client) => {
+							{clientLogos.map((client) => {
 								const assetPath = client.route.replace("./src", "..");
 								const imageSrc = clientAssets[assetPath] ?? client.route;
 

@@ -1,4 +1,4 @@
-import { ConstitutionalInformation } from "../data/CompanyInformation.js"
+import { CompanyInfo } from "../data/CompanyInformation.js"
 import iso9001Certification from "../assets/certification/ISO-9001-6449.jpg"
 import iqnetCertification from "../assets/certification/IQNet.png"
 import "./aboutUs.css"
@@ -17,7 +17,7 @@ function AboutUs() {
                             <h2 className="h2 fw-semibold text-black mb-0" id="about-us-title">Nuestra historia</h2>
                         </header>
                         <div>
-                            {ConstitutionalInformation.history.map((p) => <p key={p}>{p}</p>)}
+                            {CompanyInfo.history.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
                         </div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@ function AboutUs() {
                             <h2 className="h2 fw-semibold text-black mb-0" id="about-us-vision-title">Nuestra Visión</h2>
                         </header>
                         <div>
-                            {ConstitutionalInformation.vision.map((p) => <p key={p}>{p}</p>)}
+                            {CompanyInfo.vision.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
                         </div>
                     </div>
 
@@ -40,7 +40,7 @@ function AboutUs() {
                             <p className="text-primary mb-2">- Compromiso Industrial</p>
                             <h2 className="h2 fw-semibold text-black mb-0" id="about-us-mission-title">Nuestra Misión</h2>
                         </header>
-                        <p>{ConstitutionalInformation.mission}</p>
+                        <p>{CompanyInfo.mission}</p>
                         <div className="d-flex flex-wrap gap-3 mt-4" aria-label="Certificaciones">
                             <img
                                 className="certification-badge"

@@ -1,4 +1,27 @@
-export const ConstitutionalInformation = {
+// Import machinery images.
+import machiningCenter from "../assets/machinery/centro-de-mecanizado .webp"
+import cncMillingMachine from "../assets/machinery/fresadora-cnc .webp"
+import cncLathe from "../assets/machinery/torno-cnc .webp"
+import cncLatheSecond from "../assets/machinery/torno-cnc-2.webp"
+import conventionalLathe from "../assets/machinery/torno-convencional .webp"
+import conventionalLatheSecond from "../assets/machinery/torno-convencional-2 .webp"
+// Import client logos.
+import arcelorMittalLogo from "../assets/client-logo/arcelor-mittal.png"
+import argentalLogo from "../assets/client-logo/argental.png"
+import acerbragLogo from "../assets/client-logo/logo-acerbrag.svg"
+import seccoLogo from "../assets/client-logo/logosecco.svg"
+import rhiMagnesitaLogo from "../assets/client-logo/rhi-magnesita_logo_grey.jpg"
+import sidersaLogo from "../assets/client-logo/sidersa.png"
+import techintLogo from "../assets/client-logo/techint.png"
+import terniumLogo from "../assets/client-logo/ternium-logo_brandlogos.net_nuhs6.png"
+import weldingAlloysLogo from "../assets/client-logo/welding-Alloys.png"
+import yaraLogo from "../assets/client-logo/yara.png"
+// Import certification images.
+import iso9001Certification from "../assets/certification/ISO-9001-6449.jpg"
+import iqnetCertification from "../assets/certification/IQNet.png"
+
+
+export const CompanyInfo = {
     history: [
         "Somos una empresa con más de 30 años de trayectoria, donde hemos evolucionado de ser un emprendimiento familiar a llegar a ser una PYME.", 
         "Nuestro principio es, la innovación y la mejora continua como clave fundamental para el desarrollo a nivel empresarial. Como así también, ofrecer un servicio de calidad a través del compromiso y responsabilidad."
@@ -85,89 +108,89 @@ export const machinery = [
     }
 ]
 
-export const machineryImg = [
+export const machineryImages = [
     {
         id: 1,
         alt: "centro de mecanizado",
-        route: "./src/assets/machinary/centro-de-mecanizado.webp"
+        route: machiningCenter
     },
     {
         id: 2,
         alt: "fresadora CNC",
-        route: "./src/assets/machinary/fresadora-cnc.webp"
+        route: cncMillingMachine
     },
     {
         id: 3,
         alt: "torno CNC",
-        route: "./src/assets/machinary/torno-cnc.webp"
+        route: cncLathe
     },
     {
         id: 4,
         alt: "torno CNC",
-        route: "./src/assets/machinary/torno-cnc-2.webp"
+        route: cncLatheSecond
     },
     {
         id: 5,
         alt: "torno convencional",
-        route: "./src/assets/machinary/torno-convencional.webp"
+        route: conventionalLathe
     },
     {
         id: 6,
         alt: "torno convencional",
-        route: "./src/assets/machinary/torno-convencional.webp-2"
+        route: conventionalLatheSecond
     },
 ]
 
-export const clientLogo = [
+export const clientLogos = [
     {
         id: 1,
         alt: "Logo de ArcelorMittal",
-        route: "./src/assets/client-logo/arcelor-mittal.png"
+        route: arcelorMittalLogo
     },
     {
         id: 2,
         alt: "Logo de Argental",
-        route: "./src/assets/client-logo/argental.png"
+        route: argentalLogo
     },
     {
         id: 3,
         alt: "Logo de AcerBrag",
-        route: "./src/assets/client-logo/logo-acerbrag.svg"
+        route: acerbragLogo
     },
     {
         id: 4,
         alt: "Logo de Secco",
-        route: "./src/assets/client-logo/logosecco.svg"
+        route: seccoLogo
     },
     {
         id: 5,
         alt: "Logo de RHI Magnesita",
-        route: "./src/assets/client-logo/rhi-magnesita_logo_grey.jpg"
+        route: rhiMagnesitaLogo
     },
     {
         id: 6,
         alt: "Logo de Sidersa",
-        route: "./src/assets/client-logo/sidersa.png"
+        route: sidersaLogo
     },
     {
         id: 7,
         alt: "Logo de Techint",
-        route: "./src/assets/client-logo/techint.png"
+        route: techintLogo
     },
     {
         id: 8,
         alt: "Logo de Ternium",
-        route: "./src/assets/client-logo/ternium-logo_brandlogos.net_nuhs6.png"
+        route: terniumLogo
     },
     {
         id: 9,
         alt: "Logo de Welding Alloys",
-        route: "./src/assets/client-logo/welding-Alloys.png"
+        route: weldingAlloysLogo
     },
     {
         id: 10,
         alt: "Logo de Yara",
-        route: "./src/assets/client-logo/yara.png"
+        route: yaraLogo
     },
 ]
 
@@ -175,11 +198,11 @@ export const certifications = [
     {
         id: 1,
         alt: "Certificación ISO 9001",
-        route: "./src/assets/certifications/iso-9001.jpg"
+        route: iso9001Certification
     },
     {
         id: 2,
         alt: "IQNet",
-        route: "./src/assets/certifications/iqnet.png"
+        route: iqnetCertification
     }
 ]
