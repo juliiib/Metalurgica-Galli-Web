@@ -1,5 +1,5 @@
 import "./header.css"
-import companyLogo from "../assets/icons/Galli.png"
+import companyLogo from "../../assets/icons/Galli.png"
 
 const navigationItems = ["INICIO", "SOBRE NOSOTROS", "SERVICIOS", "PROYECTOS", "CONTACTO"]
 
@@ -12,8 +12,8 @@ function Header() {
 				</div>
 				<nav className="site-header-navigation col-7 col-md-8 d-flex flex-wrap justify-content-end align-items-center" aria-label="Navegación principal">
 				{navigationItems.map((item) => (
-					item === "SOBRE NOSOTROS" ? (
-						<a className="nav-link text-white px-1 px-md-2 py-2" href="#about-us" key={item}>
+					item === "INICIO" || item === "SOBRE NOSOTROS" ? (
+						<a className="nav-link text-white px-1 px-md-2 py-2" href={item === "INICIO" ? "#hero" : "#about-us"} key={item}>
 							{item}
 						</a>
 					) : (

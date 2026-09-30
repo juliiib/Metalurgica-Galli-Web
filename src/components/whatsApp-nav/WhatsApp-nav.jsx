@@ -1,5 +1,5 @@
 import "./whatsApp-nav.css"
-import whatsappIcon from "../assets/icons/whatsapp.svg"
+import whatsappIcon from "../../assets/icons/whatsapp.svg"
 
 function WhatsAppNav() {
 	return (

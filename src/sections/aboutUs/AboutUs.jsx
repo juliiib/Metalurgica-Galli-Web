@@ -1,13 +1,13 @@
 import { CompanyInfo } from "../../data/CompanyInformation.js"
-import iso9001Certification from "../assets/certification/ISO-9001-6449.jpg"
-import iqnetCertification from "../assets/certification/IQNet.png"
+import iso9001Certification from "../../assets/certification/ISO-9001-6449.jpg"
+import iqnetCertification from "../../assets/certification/IQNet.png"
 import "./aboutUs.css"
 
 function AboutUs() {
 	return (
         <div className="d-flex flex-column">
-            <section id="about-us" className="container-fluid px-0 page-snap-section d-flex flex-column justify-content-center" aria-labelledby="about-us-title">
-                <div className="row w-100 g-4 align-items-center">
+            <section id="about-us" className="container-fluid px-0 page-snap-section about-us-section d-flex flex-column justify-content-center" aria-labelledby="about-us-title">
+                <div className="row w-100 g-4">
                     <div className="col-12 col-md-6">
                         <div className="ratio ratio-4x3 rounded-4 bg-secondary-subtle" role="img" aria-label="Espacio reservado para una imagen" />
                     </div>
@@ -23,7 +23,7 @@ function AboutUs() {
                 </div>
             </section>
 
-            <section className="container-fluid px-0 page-snap-section d-flex flex-column justify-content-center" aria-label="Misión y visión">
+            <section className="container-fluid px-0 page-snap-section about-us-section d-flex flex-column justify-content-center" aria-label="Misión y visión">
                 <div className="row w-100 g-4">
                     <div className="col-12 col-md-6">
                         <header className="mb-4">
