@@ -1,0 +1,63 @@
+.clients-carousel {
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 0.45) 4%,
+    #000 14%,
+    #000 86%,
+    rgba(0, 0, 0, 0.45) 96%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 0.45) 4%,
+    #000 14%,
+    #000 86%,
+    rgba(0, 0, 0, 0.45) 96%,
+    transparent
+  );
+}
+
+.clients-carousel-track {
+  width: max-content;
+  animation: clients-scroll 64s linear infinite;
+}
+
+.clients-carousel-group {
+  gap: 100px;
+  padding-right: 12px;
+}
+
+.clients-carousel-item {
+  width: clamp(6rem, 10vw, 7.5rem);
+  height: 4.5rem;
+}
+
+.clients-carousel-item img {
+  display: block;
+  max-height: 82%;
+  margin: auto;
+}
+
+@keyframes clients-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .clients-carousel-track {
+    animation: none;
+  }
+
+  .clients-carousel {
+    overflow-x: auto;
+  }
+}

@@ -1,0 +1,19 @@
+.whatsApp-nav {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1100;
+  width: 62px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #25d366;
+  box-shadow: 0 6px 18px rgb(0 0 0 / 50%);
+}
+
+.whatsApp-nav-icon {
+  display: block;
+  width: 34px;
+  height: 34px;
+  margin: 14px;
+  object-fit: contain;
+}
