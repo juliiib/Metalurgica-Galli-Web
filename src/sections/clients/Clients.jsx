@@ -1,4 +1,4 @@
-import { clientLogos } from "../data/CompanyInformation.js"
+import { clientLogos } from "../../data/CompanyInformation.js"
 import "./clients.css"
 
 const clientAssets = import.meta.glob("../assets/client-logo/*", {

@@ -1,4 +1,4 @@
-import { CompanyInfo } from "../data/CompanyInformation.js"
+import { CompanyInfo } from "../../data/CompanyInformation.js"
 import iso9001Certification from "../assets/certification/ISO-9001-6449.jpg"
 import iqnetCertification from "../assets/certification/IQNet.png"
 import "./aboutUs.css"
