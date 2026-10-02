@@ -3,6 +3,8 @@ import Header from "./components/header/Header.jsx";
 import WhatsAppNav from "./components/whatsApp-nav/WhatsApp-nav.jsx";
 import Hero from "./sections/hero/Hero.jsx";
 import Services from "./sections/Services/Services.jsx";
+import Contacts from "./sections/Contacts/Contacts.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
     return (
@@ -13,6 +15,8 @@ function App() {
                 <AboutUs />
                 <Services />
                 {/* <Clients /> */}
+                <Contacts />
+                <Footer />
             </main>
             <WhatsAppNav />
         </>

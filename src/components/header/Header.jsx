@@ -28,11 +28,11 @@ function Header() {
 				</div>
 				<nav className="site-header-navigation col-7 col-md-8 d-flex flex-wrap justify-content-end align-items-center" aria-label="Navegación principal">
 				{navigationItems.map((item) => (
-					item === "INICIO" || item === "SOBRE NOSOTROS" || item === "SERVICIOS" ? (
+					item === "INICIO" || item === "SOBRE NOSOTROS" || item === "SERVICIOS" || item === "CONTACTO" ? (
 						<a
 							className="nav-link text-white px-1 px-md-2 py-2"
-							href={item === "INICIO" ? "#hero" : item === "SOBRE NOSOTROS" ? "#about-us" :  "#services"}
-							onClick={item === "SERVICIOS" ? (event) => scrollToSection(event, "services") : undefined}
+							href={item === "INICIO" ? "#hero" : item === "SOBRE NOSOTROS" ? "#about-us" : item === "CONTACTO" ? "#contact" : "#services"}
+							onClick={item === "SERVICIOS" || item === "CONTACTO" ? (event) => scrollToSection(event, item === "CONTACTO" ? "contact" : "services") : undefined}
 							key={item}
 						>
 							{item}
