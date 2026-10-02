@@ -1,6 +1,5 @@
 .clients-carousel {
   width: 100%;
-  overflow: hidden;
   -webkit-mask-image: linear-gradient(
     to right,
     transparent,

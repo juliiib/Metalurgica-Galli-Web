@@ -9,7 +9,7 @@ const clientAssets = import.meta.glob("../assets/client-logo/*", {
 
 function Clients() {
 	return (
-		<section className="container-fluid px-0 overflow-hidden page-snap-section d-flex flex-column justify-content-center" aria-labelledby="clients-title">
+		<section className="container-fluid px-0 page-snap-section d-flex flex-column justify-content-center" aria-labelledby="clients-title">
 			<h2 className="h2 fw-semibold text-black mb-4" id="clients-title">
 				Nuestros clientes
 			</h2>

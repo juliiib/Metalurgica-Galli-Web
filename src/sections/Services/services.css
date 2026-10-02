@@ -1,0 +1,88 @@
+.services-banner-section {
+  width: calc(100% - 2 * clamp(1rem, 5.625vw, 90px));
+  height: 100vh;
+  height: 100dvh;
+  min-height: 0;
+  margin-inline: auto;
+  padding-block: 90px;
+}
+
+.services-content {
+  width: 100%;
+  margin-block: auto;
+}
+
+.services-banner-section h2 {
+  flex-shrink: 0;
+}
+
+.services-banner {
+  width: min(1178px, 100%);
+  height: clamp(220px, 55vh, 640px);
+  height: clamp(220px, 55dvh, 640px);
+  margin-inline: auto;
+  border-radius: 0.5rem;
+  background-color: #d1d5d8;
+  overflow: hidden;
+  --bs-carousel-transition: transform 1.5s ease-in-out;
+}
+
+.services-banner .carousel-item {
+  height: 100%;
+}
+
+.services-banner .carousel-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.machinery-section {
+  width: calc(100% - 2 * clamp(1rem, 5.625vw, 90px));
+  height: 100vh;
+  height: 100dvh;
+  min-height: 0;
+  margin-inline: auto;
+  padding-block: clamp(40px, 12vh, 70px) clamp(8px, 2vh, 16px);
+}
+
+.machinery-section .row {
+  row-gap: 1.5rem;
+}
+
+.machinery-card {
+  display: flex;
+  flex-direction: column;
+  height: clamp(5.5rem, 14vh, 10rem);
+  padding: 0.5rem;
+  overflow: visible;
+}
+
+.machinery-card-heading {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  align-items: baseline;
+  column-gap: 0.5rem;
+  min-height: 2rem;
+}
+
+.machinery-card-heading h3 {
+  font-size: clamp(0.85rem, 1.2vw, 1.25rem);
+  line-height: 1.25;
+}
+
+.machinery-card-amount {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.machinery-card-unit,
+.machinery-card-specifications {
+  color: #5c6268;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
