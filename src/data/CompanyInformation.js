@@ -19,6 +19,19 @@ import yaraLogo from "../assets/client-logo/yara.png"
 // Import certification images.
 import iso9001Certification from "../assets/certification/ISO-9001-6449.jpg"
 import iqnetCertification from "../assets/certification/IQNet.png"
+// Import project images.
+import projectImage1 from "../assets/projects/p1.jpeg"
+import projectImage2 from "../assets/projects/p2.jpeg"
+import projectImage3 from "../assets/projects/p3.jpeg"
+import projectImage4 from "../assets/projects/p4.jpeg"
+import projectImage5 from "../assets/projects/p5.jpeg"
+import projectImage6 from "../assets/projects/p6.jpeg"
+import projectImage7 from "../assets/projects/p7.jpeg"
+import projectImage8 from "../assets/projects/p8.jpeg"
+import projectImage9 from "../assets/projects/p9.jpeg"
+import projectImage10 from "../assets/projects/p10.jpeg"
+import projectImage11 from "../assets/projects/p11.jpeg"
+import projectImage12 from "../assets/projects/p12.jpeg"
 
 export const ContactInfo = {
     phoneNumber: "5493364272165",
@@ -143,6 +156,21 @@ export const machineryImages = [
         alt: "torno convencional",
         route: conventionalLatheSecond
     },
+]
+
+export const projectsImages = [
+    { id: 1, alt: "Proyecto concluido 1", route: projectImage1 },
+    { id: 2, alt: "Proyecto concluido 2", route: projectImage2 },
+    { id: 3, alt: "Proyecto concluido 3", route: projectImage3 },
+    { id: 4, alt: "Proyecto concluido 4", route: projectImage4 },
+    { id: 5, alt: "Proyecto concluido 5", route: projectImage5 },
+    { id: 6, alt: "Proyecto concluido 6", route: projectImage6 },
+    { id: 7, alt: "Proyecto concluido 7", route: projectImage7 },
+    { id: 8, alt: "Proyecto concluido 8", route: projectImage8 },
+    { id: 9, alt: "Proyecto concluido 9", route: projectImage9 },
+    { id: 10, alt: "Proyecto concluido 10", route: projectImage10 },
+    { id: 11, alt: "Proyecto concluido 11", route: projectImage11 },
+    { id: 12, alt: "Proyecto concluido 12", route: projectImage12 },
 ]
 
 export const clientLogos = [

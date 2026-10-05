@@ -7,7 +7,11 @@ function Hero() {
 				<h1 className="hero-title" id="hero-title">
 					MECANIZADOS CONVENCIONALES Y CNC REPARACIONES
 				</h1>
-				<button className="hero-cta" type="button">
+				<button
+					className="hero-cta"
+					type="button"
+					onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth", block: "start" })}
+				>
 					Solicitar presupuesto <span aria-hidden="true">→</span>
 				</button>
 			</div>

@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react"
 import Carousel from "bootstrap/js/dist/carousel"
 import { machinery, machineryImages } from "../../data/CompanyInformation.js"
-import "./services.css"
+import "./machinery.css"
 
-function Services() {
+function Machinery() {
 	const bannerCarouselRef = useRef(null)
 
 	useEffect(() => {
@@ -23,18 +23,18 @@ function Services() {
 	return (
 		<>
 			<section
-				id="services"
-				className="container-fluid px-0 page-snap-section services-banner-section d-flex flex-column justify-content-center"
-				aria-labelledby="services-title"
+				id="machinery"
+				className="container-fluid px-0 page-snap-section machinery-banner-section d-flex flex-column justify-content-center"
+				aria-labelledby="machinery-title"
 			>
-				<div className="services-content">
+				<div className="machinery-content">
 					<p className="text-primary mb-2">- CAPACIDAD TÉCNICA</p>
-					<h2 className="h2 fw-semibold text-black mb-3" id="services-title">
-						Nuestros Servicios
+					<h2 className="h2 fw-semibold text-black mb-3" id="machinery-title">
+						Nuestras Maquinarias
 					</h2>
 					<div
-						className="services-banner carousel slide"
-						id="services-machinery-carousel"
+						className="machinery-banner carousel slide"
+						id="machinery-carousel"
 						ref={bannerCarouselRef}
 						aria-label="Galería de maquinaria"
 					>
@@ -48,7 +48,7 @@ function Services() {
 						<button
 							className="carousel-control-prev"
 							type="button"
-							data-bs-target="#services-machinery-carousel"
+							data-bs-target="#machinery-carousel"
 							data-bs-slide="prev"
 						>
 							<span className="carousel-control-prev-icon" aria-hidden="true" />
@@ -57,7 +57,7 @@ function Services() {
 						<button
 							className="carousel-control-next"
 							type="button"
-							data-bs-target="#services-machinery-carousel"
+							data-bs-target="#machinery-carousel"
 							data-bs-slide="next"
 						>
 							<span className="carousel-control-next-icon" aria-hidden="true" />
@@ -68,7 +68,7 @@ function Services() {
 			</section>
 
 			<section
-				id="machinery"
+				id="machinery-inventory"
 				className="container-fluid px-0 page-snap-section machinery-section d-flex flex-column justify-content-center"
 				aria-label="Inventario de maquinaria"
 			>
@@ -97,4 +97,4 @@ function Services() {
 	)
 }
 
-export default Services
+export default Machinery
