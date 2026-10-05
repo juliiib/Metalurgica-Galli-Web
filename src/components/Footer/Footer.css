@@ -1,4 +1,6 @@
 .page-snap-section.footer-section {
+  position: relative;
+  isolation: isolate;
   display: flex;
   width: 100vw;
   min-height: 0;
@@ -6,8 +8,17 @@
   padding: 2.5rem clamp(1rem, 5.625vw, 90px);
   align-items: center;
   justify-content: center;
-  background-color: #090d16;
+  background: transparent;
   color: #f3f5f7;
+}
+
+.footer-section::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0 0 auto;
+  height: 100dvh;
+  background-color: #012340;
+  content: "";
 }
 
 .footer-section h2,

@@ -2,6 +2,12 @@ import "./header.css"
 import companyLogo from "../../assets/icons/Galli.png"
 
 const navigationItems = ["INICIO", "SOBRE NOSOTROS", "SERVICIOS", "PROYECTOS", "CONTACTO"]
+const sectionTargets = {
+	INICIO: "hero",
+	"SOBRE NOSOTROS": "about-us",
+	SERVICIOS: "services",
+	CONTACTO: "contact",
+}
 
 function scrollToSection(event, sectionId) {
 	event.preventDefault()
@@ -13,7 +19,7 @@ function scrollToSection(event, sectionId) {
 
 	const containerTop = scrollContainer.getBoundingClientRect().top
 	const sectionTop = targetSection.getBoundingClientRect().top
-	const targetScrollTop = scrollContainer.scrollTop + sectionTop - containerTop - 80
+	const targetScrollTop = scrollContainer.scrollTop + sectionTop - containerTop
 
 	scrollContainer.scrollTo({ top: targetScrollTop, behavior: "smooth" })
     window.history.pushState(null, "", `#${sectionId}`)
@@ -28,11 +34,11 @@ function Header() {
 				</div>
 				<nav className="site-header-navigation col-7 col-md-8 d-flex flex-wrap justify-content-end align-items-center" aria-label="Navegación principal">
 				{navigationItems.map((item) => (
-					item === "INICIO" || item === "SOBRE NOSOTROS" || item === "SERVICIOS" || item === "CONTACTO" ? (
+					sectionTargets[item] ? (
 						<a
 							className="nav-link text-white px-1 px-md-2 py-2"
-							href={item === "INICIO" ? "#hero" : item === "SOBRE NOSOTROS" ? "#about-us" : item === "CONTACTO" ? "#contact" : "#services"}
-							onClick={item === "SERVICIOS" || item === "CONTACTO" ? (event) => scrollToSection(event, item === "CONTACTO" ? "contact" : "services") : undefined}
+							href={`#${sectionTargets[item]}`}
+							onClick={(event) => scrollToSection(event, sectionTargets[item])}
 							key={item}
 						>
 							{item}

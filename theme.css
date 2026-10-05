@@ -43,7 +43,7 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   scroll-snap-type: y proximity;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 0;
   scroll-behavior: smooth;
   overscroll-behavior-y: contain;
   scrollbar-width: none;

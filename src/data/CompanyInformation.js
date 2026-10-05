@@ -20,6 +20,10 @@ import yaraLogo from "../assets/client-logo/yara.png"
 import iso9001Certification from "../assets/certification/ISO-9001-6449.jpg"
 import iqnetCertification from "../assets/certification/IQNet.png"
 
+export const ContactInfo = {
+    phoneNumber: "5493364272165",
+    whatsAppMessage: "Hola, me contacto desde la web. Quería consultar por un presupuesto."
+}
 
 export const CompanyInfo = {
     history: [
