@@ -6,8 +6,11 @@ function Hero() {
 		<section id="hero" className="hero-section" aria-labelledby="hero-title">
 			<SectionContainer size="narrow" className="hero-content">
 				<h1 className="hero-title" id="hero-title">
-					MECANIZADOS CONVENCIONALES Y CNC REPARACIONES
+					Soluciones Metalúrgicas de Precisión
 				</h1>
+				<p className="hero-description" id= "hero-description">
+					Mecanizados convencionales, tecnología CNC y reparaciones industriales.
+				</p>
 				<button
 					className="hero-cta"
 					type="button"
