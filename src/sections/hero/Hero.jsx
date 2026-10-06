@@ -1,9 +1,10 @@
 import "./Hero.css"
+import SectionContainer from "../../components/SectionContainer/SectionContainer.jsx"
 
 function Hero() {
 	return (
 		<section id="hero" className="hero-section" aria-labelledby="hero-title">
-			<div className="hero-content">
+			<SectionContainer size="narrow" className="hero-content">
 				<h1 className="hero-title" id="hero-title">
 					MECANIZADOS CONVENCIONALES Y CNC REPARACIONES
 				</h1>
@@ -14,7 +15,7 @@ function Hero() {
 				>
 					Solicitar presupuesto <span aria-hidden="true">→</span>
 				</button>
-			</div>
+			</SectionContainer>
 		</section>
 	)
 }

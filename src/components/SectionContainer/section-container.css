@@ -1,0 +1,8 @@
+.section-container {
+  width: min(calc(100% - 2 * var(--section-gutter)), var(--section-content-width));
+  margin-inline: auto;
+}
+
+.section-container--narrow {
+  --section-content-width: 860px;
+}

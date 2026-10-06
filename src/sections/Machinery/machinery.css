@@ -1,14 +1,11 @@
 .machinery-banner-section {
-  width: calc(100% - 2 * clamp(1rem, 5.625vw, 90px));
   height: 100vh;
   height: 100dvh;
   min-height: 0;
-  margin-inline: auto;
   padding-block: 90px;
 }
 
 .machinery-content {
-  width: 100%;
   margin-block: auto;
 }
 
@@ -17,7 +14,7 @@
 }
 
 .machinery-banner {
-  width: min(1178px, 100%);
+  width: 100%;
   height: clamp(220px, 55vh, 640px);
   height: clamp(220px, 55dvh, 640px);
   margin-inline: auto;
@@ -39,11 +36,9 @@
 }
 
 .machinery-section {
-  width: calc(100% - 2 * clamp(1rem, 5.625vw, 90px));
   height: 100vh;
   height: 100dvh;
   min-height: 0;
-  margin-inline: auto;
   padding-block: clamp(40px, 12vh, 70px) clamp(8px, 2vh, 16px);
 }
 

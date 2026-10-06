@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react"
 import Carousel from "bootstrap/js/dist/carousel"
-import { machinery, machineryImages } from "../../data/CompanyInformation.js"
+import { machinery, machineryImages } from "../../data/machineryData.js"
+import SectionContainer from "../../components/SectionContainer/SectionContainer.jsx"
+import SectionHeader from "../../components/SectionHeader/SectionHeader.jsx"
 import "./machinery.css"
 
 function Machinery() {
@@ -27,11 +29,13 @@ function Machinery() {
 				className="container-fluid px-0 page-snap-section machinery-banner-section d-flex flex-column justify-content-center"
 				aria-labelledby="machinery-title"
 			>
-				<div className="machinery-content">
-					<p className="text-primary mb-2">- CAPACIDAD TÉCNICA</p>
-					<h2 className="h2 fw-semibold text-black mb-3" id="machinery-title">
-						Nuestras Maquinarias
-					</h2>
+				<SectionContainer className="machinery-content">
+					<SectionHeader
+						eyebrow="- CAPACIDAD TÉCNICA"
+						title="Nuestras Maquinarias"
+						id="machinery-title"
+						className="mb-3"
+					/>
 					<div
 						className="machinery-banner carousel slide"
 						id="machinery-carousel"
@@ -64,7 +68,7 @@ function Machinery() {
 							<span className="visually-hidden">Imagen siguiente</span>
 						</button>
 					</div>
-				</div>
+				</SectionContainer>
 			</section>
 
 			<section
@@ -72,7 +76,8 @@ function Machinery() {
 				className="container-fluid px-0 page-snap-section machinery-section d-flex flex-column justify-content-center"
 				aria-label="Inventario de maquinaria"
 			>
-				<div className="row g-3" aria-label="Inventario de maquinaria">
+				<SectionContainer className="machinery-inventory">
+					<div className="row g-3" aria-label="Inventario de maquinaria">
 					{machinery.map((machine) => (
 						<div className="col-12 col-sm-6 col-lg-4 col-xl-3" key={machine.id}>
 							<article className="machinery-card">
@@ -91,7 +96,8 @@ function Machinery() {
 							</article>
 						</div>
 					))}
-				</div>
+					</div>
+				</SectionContainer>
 			</section>
 		</>
 	)

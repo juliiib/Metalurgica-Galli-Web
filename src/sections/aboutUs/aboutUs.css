@@ -1,6 +1,4 @@
 .about-us-section {
-  width: calc(100% - 2 * clamp(1rem, 5.625vw, 90px));
-  margin-inline: auto;
   padding: 0px 0 2rem;
 }
 

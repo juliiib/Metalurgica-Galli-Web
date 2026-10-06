@@ -1,4 +1,6 @@
 import { clientLogos } from "../../data/CompanyInformation.js"
+import SectionContainer from "../../components/SectionContainer/SectionContainer.jsx"
+import SectionHeader from "../../components/SectionHeader/SectionHeader.jsx"
 import "./clients.css"
 
 const clientAssets = import.meta.glob("../assets/client-logo/*", {
@@ -9,10 +11,8 @@ const clientAssets = import.meta.glob("../assets/client-logo/*", {
 
 function Clients() {
 	return (
-		<section className="container-fluid px-0 page-snap-section d-flex flex-column justify-content-center" aria-labelledby="clients-title">
-			<h2 className="h2 fw-semibold text-black mb-4" id="clients-title">
-				Nuestros clientes
-			</h2>
+		<SectionContainer as="section" className="page-snap-section d-flex flex-column justify-content-center" aria-labelledby="clients-title">
+			<SectionHeader title="Nuestros clientes" id="clients-title" className="mb-4" />
 
 			<div className="clients-carousel" aria-label="Logos de nuestros clientes">
 				<div className="clients-carousel-track d-flex">
@@ -36,7 +36,7 @@ function Clients() {
 					))}
 				</div>
 			</div>
-		</section>
+		</SectionContainer>
 	)
 }
 

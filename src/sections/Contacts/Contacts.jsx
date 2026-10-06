@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { ContactInfo } from "../../data/CompanyInformation.js"
+import SectionContainer from "../../components/SectionContainer/SectionContainer.jsx"
 import emailjs from "@emailjs/browser"
 import "./contacts.css"
 
@@ -78,28 +80,29 @@ function Contacts() {
 
 	return (
 		<section id="contact" className="contact-section page-snap-section" aria-label="Contacto">
-			<div className="contact-layout row g-4 align-items-center">
+			<SectionContainer className="contact-layout">
+				<div className="row g-4 align-items-center">
 				<div className="col-12 col-lg-5">
 					<div className="contact-details">
 						<a className="contact-detail" href="tel:+541145678900">
 							<ContactIcon name="phone" />
 							<span>
 								<span className="contact-detail-label">Teléfono comercial</span>
-								<span className="contact-detail-value">+54 11 4567-8900</span>
+								<span className="contact-detail-value">{ContactInfo.phoneNumber}</span>
 							</span>
 						</a>
-						<a className="contact-detail" href="mailto:presupuestos@metalurgicagalli.com.ar">
+						<a className="contact-detail" href={`mailto:${ContactInfo.email}`}>
 							<ContactIcon name="email" />
 							<span>
 								<span className="contact-detail-label">Correo electrónico</span>
-								<span className="contact-detail-value">presupuestos@metalurgicagalli.com.ar</span>
+								<span className="contact-detail-value">{ContactInfo.email}</span>
 							</span>
 						</a>
 						<div className="contact-detail">
 							<ContactIcon name="clock" />
 							<span>
 								<span className="contact-detail-label">Horario de atención</span>
-								<span className="contact-detail-value">Lunes a Viernes de 8:00 a 17:00 hs</span>
+								<span className="contact-detail-value">{ContactInfo.horario}</span>
 							</span>
 						</div>
 						<div className="contact-certification">
@@ -140,7 +143,8 @@ function Contacts() {
 						</p>
 					</form>
 				</div>
-			</div>
+				</div>
+			</SectionContainer>
 		</section>
 	)
 }

@@ -1,20 +1,22 @@
 import "./Footer.css"
+import { ContactInfo } from "../../data/CompanyInformation.js"
+import SectionContainer from "../SectionContainer/SectionContainer.jsx"
 
 function Footer() {
 	return (
 		<footer className="footer-section page-snap-section" aria-labelledby="footer-title">
-			<div className="footer-content">
+			<SectionContainer className="footer-content">
 				<h2 className="h2 fw-semibold mb-4" id="footer-title">
 					Dirección y horarios
 				</h2>
 				<div className="row g-3 mb-4">
 					<div className="col-12 col-md-6">
 						<h3 className="h6 fw-semibold mb-1">Dirección</h3>
-						<p className="mb-0">Pendiente de confirmar</p>
+						<p className="mb-0">{ContactInfo.address}</p>
 					</div>
 					<div className="col-12 col-md-6">
 						<h3 className="h6 fw-semibold mb-1">Horarios</h3>
-						<p className="mb-0">Pendientes de confirmar</p>
+						<p className="mb-0">{ContactInfo.horario}</p>
 					</div>
 				</div>
 				<iframe
@@ -25,7 +27,7 @@ function Footer() {
 					referrerPolicy="no-referrer-when-downgrade"
 					allowFullScreen
 				/>
-			</div>
+			</SectionContainer>
 		</footer>
 	)
 }

@@ -5,7 +5,7 @@
   width: 100vw;
   min-height: 0;
   margin-inline: calc(50% - 50vw);
-  padding: 2.5rem clamp(1rem, 5.625vw, 90px);
+  padding-block: 2.5rem;
   align-items: center;
   justify-content: center;
   background: transparent;
@@ -27,14 +27,13 @@
 }
 
 .footer-content {
-  width: 100%;
-  max-width: 1178px;
+  flex: 0 1 auto;
 }
 
 .footer-map {
   display: block;
   width: 100%;
-  max-width: 1178px;
+  max-width: var(--section-content-width);
   height: 260px;
   border: 0;
   border-radius: 0.5rem;

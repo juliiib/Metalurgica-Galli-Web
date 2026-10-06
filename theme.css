@@ -18,6 +18,8 @@
   --bs-font-sans-serif: var(--font-family-base);
   --page-gutter: clamp(1rem, 5vw, 5rem);
   --page-block-gutter: clamp(4rem, 8.333vw, 7.5rem);
+  --section-content-width: 1178px;
+  --section-gutter: clamp(1rem, 5.625vw, 90px);
 }
 
 * {

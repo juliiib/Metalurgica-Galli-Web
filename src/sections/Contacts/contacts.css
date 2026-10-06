@@ -1,15 +1,12 @@
 .contact-section {
   display: flex;
   align-items: center;
-  padding: 2rem clamp(1.25rem, 5vw, 4rem);
+  padding-block: 2rem;
   background-color: #012340;
   color: #e5eaf2;
 }
 
 .contact-layout {
-  width: 100%;
-  max-width: 1178px;
-  margin-inline: auto;
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 1.5rem;
 }

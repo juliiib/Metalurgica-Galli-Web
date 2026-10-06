@@ -1,7 +1,9 @@
 import { useEffect, useRef } from "react"
 import Carousel from "bootstrap/js/dist/carousel"
+import SectionContainer from "../../components/SectionContainer/SectionContainer.jsx"
+import SectionHeader from "../../components/SectionHeader/SectionHeader.jsx"
 import "./projects.css"
-import { projectsImages } from "../../data/CompanyInformation.js"
+import { projectsImages } from "../../data/projectsData.js"
 
 const projectSlides = Array.from(
 	{ length: Math.ceil(projectsImages.length / 4) },
@@ -27,11 +29,13 @@ function Projects() {
 
 	return (
 		<section className="projects-section page-snap-section" id="projects" aria-labelledby="projects-title">
-			<div className="projects-content">
-				<p className="text-primary mb-2">- Soluciones entregadas</p>
-				<h2 className="h2 fw-semibold text-black mb-3" id="projects-title">
-					Proyectos Concluidos
-				</h2>
+			<SectionContainer className="projects-content">
+				<SectionHeader
+					eyebrow="- Soluciones entregadas"
+					title="Proyectos Concluidos"
+					id="projects-title"
+					className="mb-3"
+				/>
 				<p className="mb-0">
 					Garantía de robustez en cada pieza metálica. Fabricados bajo los más altos estándares de control de materiales.
 				</p>
@@ -69,7 +73,7 @@ function Projects() {
 				) : (
 					<p className="projects-empty mb-0">Próximamente, nuevos proyectos concluidos.</p>
 				)}
-			</div>
+			</SectionContainer>
 		</section>
 	)
 }
