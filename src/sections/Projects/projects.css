@@ -1,11 +1,19 @@
 .projects-section {
   display: flex;
+  width: calc(100% - 2 * clamp(1rem, 5.625vw, 90px));
+  margin-inline: auto;
   align-items: center;
   padding-block: 90px 2rem;
 }
 
+.projects-content {
+  width: 100%;
+  max-width: 1178px;
+  margin-inline: auto;
+}
+
 .projects-carousel {
-  max-width: var(--section-content-width);
+  max-width: 1178px;
   margin: 2.5rem auto 0;
   --bs-carousel-transition: transform 1.5s ease-in-out;
 }
