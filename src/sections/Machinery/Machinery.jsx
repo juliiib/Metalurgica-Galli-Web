@@ -32,7 +32,7 @@ function Machinery() {
 				<SectionContainer className="machinery-content">
 					<SectionHeader
 						eyebrow="- CAPACIDAD TÉCNICA"
-						title="Nuestras Maquinarias"
+						title="Nuestras Maquinas"
 						id="machinery-title"
 						className="mb-3"
 					/>

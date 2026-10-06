@@ -3,7 +3,7 @@ import { ContactInfo } from "../../data/CompanyInformation.js"
 import whatsappIcon from "../../assets/icons/whatsapp.svg"
 
 function WhatsAppNav() {
-	const phoneNumber = ContactInfo.phoneNumber
+	const phoneNumber = 5493364565931
 	const message = encodeURIComponent(ContactInfo.whatsAppMessage)
 
 	if (!phoneNumber) return null

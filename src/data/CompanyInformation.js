@@ -14,10 +14,10 @@ import iso9001Certification from "../assets/certification/ISO-9001-6449.jpg"
 import iqnetCertification from "../assets/certification/IQNet.png"
 
 export const ContactInfo = {
-    phoneNumber: "5493364272165",
+    phoneNumber: "+54 9 336 4565931",
     whatsAppMessage: "Hola, me contacto desde la web. Quería consultar por un presupuesto.",
-    email: "admin2@metalurgicagalli.com.ar",
-    horario: "pendiente a confirmar",
+    email: "admin2@metalgallislr.com.ar",
+    horario: "de 7:00 a 15:00 hs",
     address: "Rivarola 4973, Villa Constitución, Santa Fe, Argentina",
 }
 
