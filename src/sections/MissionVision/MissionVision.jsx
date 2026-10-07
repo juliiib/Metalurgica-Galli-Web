@@ -4,7 +4,7 @@ import { certifications } from "../../data/CompanyInformation.js"
 import SectionContainer from "../../components/SectionContainer/SectionContainer.jsx"
 import SectionHeader from "../../components/SectionHeader/SectionHeader.jsx"
 
-import "./MissionVision.css"
+import "./missionVision.css"
 
 function MissionVision() {
     return (
