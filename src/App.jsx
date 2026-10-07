@@ -7,6 +7,7 @@ import Projects from "./sections/Projects/Projects.jsx";
 import Contacts from "./sections/Contacts/Contacts.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import MissionVision from "./sections/MissionVision/MissionVision.jsx";
+import Clients from  "./sections/clients/Clients.jsx"
 
 function App() {
     return (
@@ -18,7 +19,7 @@ function App() {
                 <MissionVision />
                 <Machinery />
                 <Projects />
-                {/* <Clients /> */}
+                <Clients />
                 <Contacts />
                 <Footer />
             </main>

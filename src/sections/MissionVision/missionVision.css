@@ -21,5 +21,10 @@
   .mission-vision-section header {
     margin-bottom: 0.35rem !important;
   }
+
+  .mission-vision-section .row {
+    --bs-gutter-y: 0.75rem;
+  }
 }
+
 

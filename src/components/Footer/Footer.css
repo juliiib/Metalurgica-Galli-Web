@@ -15,8 +15,7 @@
 .footer-section::before {
   position: absolute;
   z-index: -1;
-  inset: 0 0 auto;
-  height: 100dvh;
+  inset: 0;
   background-color: #012340;
   content: "";
 }

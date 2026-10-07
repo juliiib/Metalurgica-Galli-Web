@@ -81,9 +81,6 @@
   font-weight: 400;
 }
 
-/* En móvil el contenido (banner + 12 tarjetas) supera el alto de pantalla:
-   se usa min-height en vez de height fijo para que cada sección crezca con
-   su contenido y no se superponga con la sección anterior/siguiente. */
 @media (max-width: 767.98px) {
   .machinery-banner-section {
     height: auto;
@@ -101,34 +98,39 @@
     height: auto;
     min-height: 100vh;
     min-height: 100dvh;
-    padding-block: 90px 2rem;
+    padding-block: 90px 0.75rem;
   }
 
   .machinery-section .row {
-    row-gap: 1rem;
+    --bs-gutter-y: 0.35rem;
+    row-gap: 0;
   }
 
   .machinery-card {
     height: auto;
-    min-height: clamp(5.5rem, 14vh, 10rem);
-    padding: 0.4rem;
+    min-height: clamp(3.4rem, 10vh, 6rem);
+    padding: 0.3rem;
   }
 
   .machinery-card-heading {
-    grid-template-columns: 1.5rem minmax(0, 1fr);
-    column-gap: 0.4rem;
+    grid-template-columns: 1.25rem minmax(0, 1fr);
+    column-gap: 0.35rem;
+    min-height: 1.5rem;
+    margin-bottom: 0.1rem !important;
   }
 
   .machinery-card-heading h3 {
-    font-size: 0.85rem;
+    font-size: 0.78rem;
+    line-height: 1.15;
   }
 
   .machinery-card-amount {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .machinery-card-unit,
   .machinery-card-specifications {
-    font-size: 0.8rem;
+    font-size: 0.72rem;
+    line-height: 1.2;
   }
 }

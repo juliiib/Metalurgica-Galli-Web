@@ -11,7 +11,7 @@ const clientAssets = import.meta.glob("../assets/client-logo/*", {
 
 function Clients() {
 	return (
-		<SectionContainer as="section" className="page-snap-section d-flex flex-column justify-content-center" aria-labelledby="clients-title">
+		<SectionContainer as="section" className="clients-section d-flex flex-column justify-content-center" aria-labelledby="clients-title">
 			<SectionHeader title="Nuestros clientes" id="clients-title" className="mb-4" />
 
 			<div className="clients-carousel" aria-label="Logos de nuestros clientes">
