@@ -37,7 +37,7 @@ function Machinery() {
 						className="mb-3"
 					/>
 					<div
-						className="machinery-banner carousel slide"
+						className="machinery-banner carousel slide carousel-fade"
 						id="machinery-carousel"
 						ref={bannerCarouselRef}
 						aria-label="Galería de maquinaria"
@@ -79,7 +79,7 @@ function Machinery() {
 				<SectionContainer className="machinery-inventory">
 					<div className="row g-3" aria-label="Inventario de maquinaria">
 					{machinery.map((machine) => (
-						<div className="col-12 col-sm-6 col-lg-4 col-xl-3" key={machine.id}>
+						<div className="col-6 col-lg-4 col-xl-3" key={machine.id}>
 							<article className="machinery-card">
 								<div className="machinery-card-heading mb-2">
 									<p className="machinery-card-amount mb-0">

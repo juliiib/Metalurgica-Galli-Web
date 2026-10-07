@@ -1,9 +1,17 @@
-.about-us-section {
-  padding: 0px 0 2rem;
-}
+@media (max-width: 767.98px) {
+  #history-text {
+    order: 1;
+  }
 
-.certification-badge {
-  width: 90px;
-  height: 140px;
-  object-fit: contain;
+  #history-Photo {
+    order: 2;
+  }
+
+  #history-Photo .ratio {
+    height: clamp(140px, 26vh, 220px);
+  }
+
+  #history-Photo .ratio::before {
+    display: none;
+  }
 }

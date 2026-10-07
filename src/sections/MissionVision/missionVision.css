@@ -1,0 +1,25 @@
+.mission-vision-section {
+  padding: 0px 0 2rem;
+}
+
+.certification-badge {
+  width: 90px;
+  height: 140px;
+  object-fit: contain;
+}
+
+@media (max-width: 767.98px) {
+  .mission-vision-section {
+    padding-block: 6.5rem;
+  }
+
+  .certification-badge {
+    width: 56px;
+    height: 88px;
+  }
+
+  .mission-vision-section header {
+    margin-bottom: 0.35rem !important;
+  }
+}
+

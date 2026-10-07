@@ -6,6 +6,7 @@ import Machinery from "./sections/Machinery/Machinery.jsx";
 import Projects from "./sections/Projects/Projects.jsx";
 import Contacts from "./sections/Contacts/Contacts.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+import MissionVision from "./sections/MissionVision/MissionVision.jsx";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <main className="page-snap-container page-snap-bleed">
                 <Hero />
                 <AboutUs />
+                <MissionVision />
                 <Machinery />
                 <Projects />
                 {/* <Clients /> */}

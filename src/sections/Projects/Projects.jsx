@@ -1,17 +1,34 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useMemo, useRef, useState } from "react"
 import Carousel from "bootstrap/js/dist/carousel"
 import SectionContainer from "../../components/SectionContainer/SectionContainer.jsx"
 import SectionHeader from "../../components/SectionHeader/SectionHeader.jsx"
 import "./projects.css"
 import { projectsImages } from "../../data/projectsData.js"
 
-const projectSlides = Array.from(
-	{ length: Math.ceil(projectsImages.length / 4) },
-	(_, slideIndex) => projectsImages.slice(slideIndex * 4, slideIndex * 4 + 4),
-)
+const MOBILE_QUERY = "(max-width: 575.98px)"
+
+function chunkImages(images, size) {
+	return Array.from({ length: Math.ceil(images.length / size) }, (_, slideIndex) =>
+		images.slice(slideIndex * size, slideIndex * size + size),
+	)
+}
 
 function Projects() {
 	const projectCarouselRef = useRef(null)
+	const [isMobile, setIsMobile] = useState(
+		() => typeof window !== "undefined" && window.matchMedia(MOBILE_QUERY).matches,
+	)
+
+	useEffect(() => {
+		const mediaQuery = window.matchMedia(MOBILE_QUERY)
+		const handleChange = (event) => setIsMobile(event.matches)
+
+		mediaQuery.addEventListener("change", handleChange)
+		return () => mediaQuery.removeEventListener("change", handleChange)
+	}, [])
+
+	// En móvil se muestra una imagen por slide; en el resto, grupos de 4.
+	const projectSlides = useMemo(() => chunkImages(projectsImages, isMobile ? 1 : 4), [isMobile])
 
 	useEffect(() => {
 		if (!projectCarouselRef.current || projectSlides.length < 2) return undefined
@@ -25,7 +42,7 @@ function Projects() {
 		})
 
 		return () => carousel.dispose()
-	}, [])
+	}, [projectSlides])
 
 	return (
 		<section className="projects-section page-snap-section" id="projects" aria-labelledby="projects-title">
@@ -43,6 +60,7 @@ function Projects() {
 					<div
 						className="projects-carousel carousel slide"
 						id="projects-carousel"
+						key={isMobile ? "mobile" : "desktop"}
 						ref={projectCarouselRef}
 						aria-label="Galería de proyectos concluidos"
 					>

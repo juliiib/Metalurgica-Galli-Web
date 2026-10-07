@@ -21,7 +21,6 @@
   border-radius: 0.5rem;
   background-color: #d1d5d8;
   overflow: hidden;
-  --bs-carousel-transition: transform 1.5s ease-in-out;
 }
 
 .machinery-banner .carousel-item {
@@ -80,4 +79,56 @@
   color: #5c6268;
   font-size: 0.9rem;
   font-weight: 400;
+}
+
+/* En móvil el contenido (banner + 12 tarjetas) supera el alto de pantalla:
+   se usa min-height en vez de height fijo para que cada sección crezca con
+   su contenido y no se superponga con la sección anterior/siguiente. */
+@media (max-width: 767.98px) {
+  .machinery-banner-section {
+    height: auto;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding-block: 90px 2rem;
+  }
+
+  .machinery-banner {
+    height: clamp(180px, 32vh, 320px);
+    height: clamp(180px, 32dvh, 320px);
+  }
+
+  .machinery-section {
+    height: auto;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding-block: 90px 2rem;
+  }
+
+  .machinery-section .row {
+    row-gap: 1rem;
+  }
+
+  .machinery-card {
+    height: auto;
+    min-height: clamp(5.5rem, 14vh, 10rem);
+    padding: 0.4rem;
+  }
+
+  .machinery-card-heading {
+    grid-template-columns: 1.5rem minmax(0, 1fr);
+    column-gap: 0.4rem;
+  }
+
+  .machinery-card-heading h3 {
+    font-size: 0.85rem;
+  }
+
+  .machinery-card-amount {
+    font-size: 0.9rem;
+  }
+
+  .machinery-card-unit,
+  .machinery-card-specifications {
+    font-size: 0.8rem;
+  }
 }
