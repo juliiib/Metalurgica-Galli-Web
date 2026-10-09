@@ -25,11 +25,17 @@
 }
 
 html {
-  scroll-snap-type: y proximity;
+  scroll-snap-type: none;
   scroll-padding-top: 0;
   scroll-behavior: smooth;
   overscroll-behavior-y: contain;
   overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-snap-type: y proximity;
+  }
 }
 
 body {
