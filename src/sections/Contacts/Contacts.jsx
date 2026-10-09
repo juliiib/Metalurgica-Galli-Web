@@ -84,7 +84,7 @@ function Contacts() {
         <div className="row g-4 align-items-center">
           <div className="col-12 col-lg-5">
             <div className="contact-details">
-              <a className="contact-detail" href="tel:+541145678900">
+              <a className="contact-detail" href={`tel:${ContactInfo.phoneNumber.replace(/\s+/g, "")}`}>
                 <ContactIcon name="phone" />
                 <span>
                   <span className="contact-detail-label">Teléfono comercial</span>
