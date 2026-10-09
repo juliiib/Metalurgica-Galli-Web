@@ -12,6 +12,8 @@ import yaraLogo from "../assets/client-logo/yara.png"
 // Import certification images.
 import iso9001Certification from "../assets/certification/ISO-9001-6449.jpg"
 import iqnetCertification from "../assets/certification/IQNet.png"
+// Import about image.
+import aboutImage from "../assets/Images/galli-frente.webp"
 
 export const ContactInfo = {
     phoneNumber: "+54 9 336 4565931",
@@ -98,3 +100,9 @@ export const certifications = [
         route: iqnetCertification
     }
 ]
+
+export const AboutImage = {
+    id: 1,
+    alt: "Imagen de la empresa Metalúrgica Galli",
+    route: aboutImage
+}

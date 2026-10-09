@@ -7,11 +7,9 @@
     order: 2;
   }
 
-  #history-Photo .ratio {
+  #history-Photo img {
+    width: 100%;
     height: clamp(140px, 26vh, 220px);
-  }
-
-  #history-Photo .ratio::before {
-    display: none;
+    object-fit: cover;
   }
 }

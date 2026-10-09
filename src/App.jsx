@@ -2,7 +2,7 @@ import AboutUs from "./sections/aboutUs/AboutUs.jsx";
 import Header from "./components/header/Header.jsx";
 import WhatsAppNav from "./components/whatsApp-nav/WhatsApp-nav.jsx";
 import Hero from "./sections/hero/Hero.jsx";
-import Machinery from "./sections/Machinery/Machinery.jsx";
+import Machines from "./sections/Machines/Machines.jsx";
 import Projects from "./sections/Projects/Projects.jsx";
 import Contacts from "./sections/Contacts/Contacts.jsx";
 import Footer from "./components/Footer/Footer.jsx";
@@ -17,7 +17,7 @@ function App() {
                 <Hero />
                 <AboutUs />
                 <MissionVision />
-                <Machinery />
+                <Machines />
                 <Projects />
                 <Clients />
                 <Contacts />
